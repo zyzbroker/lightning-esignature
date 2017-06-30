@@ -49,9 +49,9 @@ sometime you want to show saved signature on the page. The ESignature has ReadOn
 
 
 ## We are using the following opensource framework
-
 [Signature Pad](https://github.com/szimek/signature_pad)
 
+### We augment this signature pad library to add compressing capability to shake down the size of the generated signature so that you don't need another library to shrink the size.
 
 ## The Demo Image from salesforce1 mobile simulator
 
