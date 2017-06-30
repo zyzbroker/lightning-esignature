@@ -15,6 +15,7 @@ minWidth (double): minimum width of a line
 maxWidth (double): maximum width of a line
 penColor (string): pen color, can be 'red', 'blue' or rgb(0,0,0) etc;
 ```
+#### Pen dotSize = (minWidth + maxWidth) / 2;
 
 
 ### Step2: in your container component, you have save button to save the signature into the backend storage. here is the sample code when the save button is clicked.
