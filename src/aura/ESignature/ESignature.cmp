@@ -1,0 +1,25 @@
+<aura:component >
+    <ltng:require scripts="{!$Resource.esignature + '/signature_pad.min.js'}"
+        afterScriptsLoaded="{!c.onScriptReady}"/>
+    <aura:attribute name="signatureData" type="string" default=""/>
+    <aura:attribute name="readOnly" type="Boolean" default="false"/>
+    <aura:attribute name="style" type="string" access="private"/>
+    <aura:attribute name="signaturePad" type="object" access="private"/>
+    <aura:method name="capture" action="{!c.onCapture}" 
+        description="call this method to capture signature"/>
+    <aura:method name="clear" action="{!c.onClear}" description="clear the signature"/>
+    <div class="mb-signature-container" ontouchmove="{!c.handleTouchMove}">
+        <aura:if isTrue="{!v.readOnly}">
+            <div class="mb-signature-pad-readonly">
+                <img alt="User Signature" src="{!v.signatureData}"/>
+            </div>
+            <aura:set attribute="else">
+                <div class="mb-signature-pad" id="signatureWrapper">
+                    <div class="mb-signature-pad-body">
+                        <canvas></canvas>
+                    </div>
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

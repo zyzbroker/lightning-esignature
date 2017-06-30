@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
+    <div>
+        <div class="container">
+            <c:ESignature aura:id="signature"/>
+            <button onclick="{!c.onClear}">clear</button>
+            <button onclick="{!c.onReadOnly}">Show ReadOnly</button>
+        </div>
+    </div>
+</aura:component>
