@@ -19,13 +19,6 @@
     <types>
         <members>DemoSignature</members>
         <members>ESignature</members>
-        <members>MyTeamHeader</members>
-        <members>MyTeamMemberShift</members>
-        <members>MyTeamMemberShiftHightlight</members>
-        <members>MyTeamMemberTimeEntryCard</members>
-        <members>MyTeamMemberTimeEntryItem</members>
-        <members>MyTeamMemberTimeEntrySummary</members>
-        <members>SimpleComponentEvent</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
