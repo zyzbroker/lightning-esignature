@@ -1,6 +1,9 @@
 <aura:component >
     <ltng:require scripts="{!$Resource.esignature + '/signature_pad.min.js'}"
         afterScriptsLoaded="{!c.onScriptReady}"/>
+    <aura:attribute name="minWidth" type="double" default="0.5"/>
+    <aura:attribute name="maxWidth" type="double" default="2"/>
+    <aura:attribute name="penColor" type="string" default="rgb(0,0,0)"/>
     <aura:attribute name="signatureData" type="string" default=""/>
     <aura:attribute name="readOnly" type="Boolean" default="false"/>
     <aura:attribute name="style" type="string" access="private"/>

@@ -1,7 +1,7 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
     <div>
         <div class="container">
-            <c:ESignature aura:id="signature"/>
+            <c:ESignature aura:id="signature" minWidth="0.5" maxWidth="1.5"/>
             <button onclick="{!c.onClear}">clear</button>
             <button onclick="{!c.onReadOnly}">Show ReadOnly</button>
         </div>
