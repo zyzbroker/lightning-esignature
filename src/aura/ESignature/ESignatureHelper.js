@@ -22,8 +22,6 @@
     resizeCanvas();
   },
 
-  afterRender: function(cmp) {},
-
   capture: function(cmp) {
     var dataUrl, pad = cmp.get('v.signaturePad');
     pad.trimCanvas();
@@ -33,5 +31,10 @@
 
   clear: function(cmp) {
     cmp.get('v.signaturePad').clear();
+  },
+
+  touch: function(cmp) {
+    var e = document.querySelector('input.esignature-hide');
+    e.focus();
   }
 })

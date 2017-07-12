@@ -3,7 +3,16 @@
   width: 100%;
 }
 
-.THIS.mb-signature-container {}
+.THIS .esignature-hide {
+  border: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: transparent;
+}
 
 .THIS .mb-signature-pad,
 .THIS .mb-signature-pad-readonly {

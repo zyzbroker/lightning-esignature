@@ -11,6 +11,10 @@
     evt.stopPropagation();
   },
 
+  onTouch: function(cmp, evt, h) {
+    h.touch(cmp);
+  },
+
   onClear: function(cmp, evt, h) {
     h.clear(cmp);
   }

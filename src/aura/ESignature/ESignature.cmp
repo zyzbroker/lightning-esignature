@@ -11,12 +11,15 @@
     <aura:method name="capture" action="{!c.onCapture}" 
         description="call this method to capture signature"/>
     <aura:method name="clear" action="{!c.onClear}" description="clear the signature"/>
-    <div class="mb-signature-container" ontouchmove="{!c.handleTouchMove}">
+    <div class="mb-signature-container" 
+        ontouchmove="{!c.handleTouchMove}"
+        ontouchstart="{!c.onTouch}">
         <aura:if isTrue="{!v.readOnly}">
             <div class="mb-signature-pad-readonly">
                 <img alt="User Signature" src="{!v.signatureData}"/>
             </div>
             <aura:set attribute="else">
+                <input type="text" readonly="true" class="esignature-hide"/>
                 <div class="mb-signature-pad" id="signatureWrapper">
                     <div class="mb-signature-pad-body">
                         <canvas></canvas>
