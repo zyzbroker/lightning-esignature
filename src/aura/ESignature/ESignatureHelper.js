@@ -13,7 +13,6 @@
       canvas.getContext("2d").scale(ratio, ratio);
     }
 
-    window.addEventListener('resize', resizeCanvas);
     cmp.set('v.signaturePad', new SignaturePad(canvas, {
       minWidth: minWidth,
       maxWidth: maxWidth,
