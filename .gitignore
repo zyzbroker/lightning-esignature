@@ -1,0 +1,11 @@
+/src/classes
+/src/components
+/src/pages
+/src/staticresources
+/src/package.xml
+/src/aura/MyTeam*
+/src/aura/Simple*
+/debug
+/config
+topedge.sublime-project
+topedge.sublime-workspace
