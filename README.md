@@ -3,7 +3,7 @@
 The E-Signature lightning component enables the salesforce developers to add e-sinature feature on their web/salesforce1 mobile application. It generates the image data URL string so that you can either save it into the database as one of the table field or save it as PNG file. It also to show the signaure in Read only mode.
 
 ## How to install ESignature Component
-[Unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6A00000149oi)
+[Unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6A000000JR6W)
 
 ## How to use the ESignature Component
 
