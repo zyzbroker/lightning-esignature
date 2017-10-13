@@ -1,9 +1,19 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
     <div>
         <div class="container">
-            <c:ESignature aura:id="signature" minWidth="0.5" maxWidth="1.5"/>
+            <c:ESignature aura:id="signature" minWidth="0.5" maxWidth="1.5" id="consmer"/>
             <button onclick="{!c.onClear}">clear</button>
             <button onclick="{!c.onReadOnly}">Show ReadOnly</button>
+        </div>
+         <div class="container">
+            <c:ESignature aura:id="signature1" minWidth="0.5" maxWidth="1.5" id="agent"/>
+            <button onclick="{!c.onClear1}">clear 1</button>
+            <button onclick="{!c.onReadOnly1}">Show ReadOnly 1</button>
+        </div>
+         <div class="container">
+            <c:ESignature aura:id="signature2" minWidth="0.5" maxWidth="1.5" id="lawyer"/>
+            <button onclick="{!c.onClear2}">clear 2</button>
+            <button onclick="{!c.onReadOnly2}">Show ReadOnly 2</button>
         </div>
     </div>
 </aura:component>

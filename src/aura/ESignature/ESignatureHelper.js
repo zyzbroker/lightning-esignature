@@ -1,6 +1,6 @@
 ({
   init: function(cmp) {
-    var wrapper = document.getElementById('signatureWrapper'),
+    var wrapper = document.getElementById(this._getWrapperElement(cmp)),
       canvas = wrapper.querySelector('canvas'),
       minWidth = parseFloat(cmp.get('v.minWidth')),
       maxWidth = parseFloat(cmp.get('v.maxWidth')),
@@ -19,6 +19,10 @@
       penColor: penColor
     }));
     resizeCanvas();
+  },
+
+  _getWrapperElement: function(cmp){
+    return 'signatureWrapper' + cmp.get('v.id');
   },
 
   capture: function(cmp) {

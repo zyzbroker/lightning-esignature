@@ -1,6 +1,7 @@
 <aura:component >
     <ltng:require scripts="{!$Resource.esignature + '/signature_pad.min.js'}"
         afterScriptsLoaded="{!c.onScriptReady}"/>
+    <aura:attribute name="id" type="String" default=""/>
     <aura:attribute name="minWidth" type="double" default="0.5"/>
     <aura:attribute name="maxWidth" type="double" default="2"/>
     <aura:attribute name="penColor" type="string" default="rgb(0,0,0)"/>
@@ -20,7 +21,7 @@
             </div>
             <aura:set attribute="else">
                 <input type="text" readonly="true" class="esignature-hide"/>
-                <div class="mb-signature-pad" id="signatureWrapper">
+                <div class="mb-signature-pad" id="{!'signatureWrapper' + v.id}">
                     <div class="mb-signature-pad-body">
                         <canvas></canvas>
                     </div>
